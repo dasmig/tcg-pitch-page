@@ -366,7 +366,7 @@
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="hero-stat-value">11</div>
+        <div class="hero-stat-value">40</div>
         <div class="hero-stat-label">API Endpoints</div>
       </div>
       <div class="hero-stat">
@@ -378,8 +378,8 @@
         <div class="hero-stat-label">AI Pipeline Stages</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-value">75+</div>
-        <div class="hero-stat-label">E2E Tests Passing</div>
+        <div class="hero-stat-value">600+</div>
+        <div class="hero-stat-label">Tests Passing</div>
       </div>
     </div>
   </div>
@@ -643,9 +643,9 @@
     <span class="badge badge-accent">Technical Architecture</span>
     <h2>Production-Ready Backend. Built and Tested.</h2>
     <p style="max-width: 700px;">
-      The platform backend is fully operational — not a prototype. 11 API routers, 14 database tables, 
+      The platform is fully operational — not a prototype. 40 API endpoints across 11 routers, 14 database tables, 
       JWT auth, rate limiting, pack economy with pity timers, and a 4-stage generation pipeline. 
-      All containerized and test-covered.
+      A complete Flutter mobile client with 21 screens and 241+ tests. All containerized and test-covered.
     </p>
 
     <div class="arch-grid fade-in">
@@ -663,7 +663,7 @@
         <p>14 normalized tables with JSONB mechanics storage, Wilson Score ranking, and pity timer tracking.</p>
         <div style="margin-top: 0.75rem;">
           <span class="tech-tag">PostgreSQL 16</span>
-          <span class="tech-tag">SQLAlchemy 2.0</span>
+          <span class="tech-tag">SQLModel</span>
           <span class="tech-tag">Alembic</span>
         </div>
       </div>
@@ -673,7 +673,7 @@
         <div style="margin-top: 0.75rem;">
           <span class="tech-tag">Celery</span>
           <span class="tech-tag">Redis</span>
-          <span class="tech-tag">OpenAI / Local LLM</span>
+          <span class="tech-tag">Anthropic Claude</span>
         </div>
       </div>
       <div class="arch-card">
@@ -687,20 +687,21 @@
       </div>
       <div class="arch-card">
         <h4>Infrastructure</h4>
-        <p>Fully containerized with Docker Compose. MinIO for asset storage. CI-ready with health checks.</p>
+        <p>Fully containerized with Docker Compose. MinIO for asset storage. Caddy reverse proxy with TLS.</p>
         <div style="margin-top: 0.75rem;">
           <span class="tech-tag">Docker</span>
           <span class="tech-tag">MinIO</span>
-          <span class="tech-tag">Nginx</span>
+          <span class="tech-tag">Caddy</span>
         </div>
       </div>
       <div class="arch-card">
         <h4>Testing</h4>
-        <p>End-to-end test suite covering auth, cards, packs, decks, friends, generation, and economy flows.</p>
+        <p>Comprehensive test suites covering API (249+ pytest), Flutter (241+ widget/unit), and AI workers (101 tests).</p>
         <div style="margin-top: 0.75rem;">
           <span class="tech-tag">pytest</span>
-          <span class="tech-tag">httpx</span>
-          <span class="tech-tag">75+ tests</span>
+          <span class="tech-tag">flutter_test</span>
+          <span class="tech-tag">mocktail</span>
+          <span class="tech-tag">600+ tests</span>
         </div>
       </div>
     </div>
@@ -715,14 +716,14 @@
     <span class="badge badge-gold">Current Progress</span>
     <h2>What's Already Built</h2>
     <p style="max-width: 700px;">
-      This isn't a concept deck. The backend platform is production-ready. The Flutter client is scaffolded. 
+      This isn't a concept deck. The backend platform is production-ready. The Flutter client is fully built with 21 screens. 
       The generation pipeline is operational.
     </p>
 
     <div class="metrics-grid fade-in">
       <div class="metric-card">
-        <div class="metric-value">11</div>
-        <div class="metric-label">API Router Modules</div>
+        <div class="metric-value">40</div>
+        <div class="metric-label">API Endpoints</div>
       </div>
       <div class="metric-card">
         <div class="metric-value">14</div>
@@ -733,12 +734,12 @@
         <div class="metric-label">Generation Pipeline Stages</div>
       </div>
       <div class="metric-card">
-        <div class="metric-value">75+</div>
+        <div class="metric-value">600+</div>
         <div class="metric-label">Passing Tests</div>
       </div>
       <div class="metric-card">
-        <div class="metric-value">20+</div>
-        <div class="metric-label">Flutter Source Files</div>
+        <div class="metric-value">21</div>
+        <div class="metric-label">Flutter Screens</div>
       </div>
       <div class="metric-card">
         <div class="metric-value">5</div>
@@ -775,15 +776,15 @@
         <div class="roadmap-content">
           <span class="badge badge-accent" style="margin-bottom: 0.5rem;">Completed</span>
           <h3>G1 — Foundation Platform</h3>
-          <p>Full backend API (auth, cards, packs, decks, friends, generation), PostgreSQL schema with 14 tables, 4-stage AI pipeline, Docker deployment, 75+ passing tests, Flutter client scaffold.</p>
+          <p>Full backend API (auth, cards, packs, decks, friends, generation), PostgreSQL schema with 14 tables, 4-stage AI pipeline, Docker deployment, 600+ passing tests, complete Flutter client with 21 screens.</p>
         </div>
       </div>
       <div class="roadmap-item">
         <div class="roadmap-dot active"></div>
         <div class="roadmap-content">
           <span class="badge badge-gold" style="margin-bottom: 0.5rem;">In Progress</span>
-          <h3>G2 — Game Engine & Mobile UI</h3>
-          <p>Multiplier scoring engine, 3-lane PvP board, simultaneous turn resolution, complete Flutter UI (collection grid, pack opening animations, deck builder), WebSocket real-time matches.</p>
+          <h3>G2 — Game Engine & PvP</h3>
+          <p>Multiplier scoring engine (Rust), 3-lane PvP board, simultaneous turn resolution, match UI in Flutter, WebSocket real-time matches, Elo matchmaking.</p>
         </div>
       </div>
       <div class="roadmap-item">
