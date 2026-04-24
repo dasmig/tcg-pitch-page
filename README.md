@@ -11,7 +11,7 @@ Open `index.html` in any browser. No build step required — everything is self-
 This page is designed to be deployed to GitHub Pages:
 
 ```bash
-# Enable Pages in repo settings → Source: deploy from branch → main / root
+# Enable Pages in repo settings > Source: deploy from branch > main / root
 ```
 
 Or any static hosting (Netlify, Vercel, Cloudflare Pages).
@@ -34,9 +34,9 @@ Or any static hosting (Netlify, Vercel, Cloudflare Pages).
 - Pure HTML/CSS/JS (zero dependencies)
 - Google Fonts: Cinzel, Inter, JetBrains Mono
 - Intersection Observer for scroll animations
-- Fully responsive (mobile → desktop)
+- Fully responsive (mobile > desktop)
 
 ## License
 
-Proprietary � see [LICENSE](LICENSE).
+Proprietary � see [LICENSE](LICENSE).
 
