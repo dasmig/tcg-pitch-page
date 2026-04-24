@@ -35,3 +35,8 @@ Or any static hosting (Netlify, Vercel, Cloudflare Pages).
 - Google Fonts: Cinzel, Inter, JetBrains Mono
 - Intersection Observer for scroll animations
 - Fully responsive (mobile â†’ desktop)
+
+## License
+
+Proprietary — see [LICENSE](LICENSE).
+
